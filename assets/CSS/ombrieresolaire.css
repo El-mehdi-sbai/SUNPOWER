@@ -1,0 +1,124 @@
+@charset "UTF-8";
+/* Import du Style.css, Contient les éléments communs à toutes les pages: la nav et le footer et les variables  */
+@import url("./style.css");
+nav li:nth-child(2) {
+  background-color: #94DC1F;
+}
+
+main {
+  width: 70%;
+  margin: 0 70px;
+  margin-bottom: 70px;
+  margin: auto;
+}
+main h1 {
+  width: 100%;
+  text-align: center;
+  margin-top: 70px;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 70px;
+}
+main h2 {
+  text-align: left;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+main .tag {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  justify-self: flex-start;
+  height: 40px;
+  width: 280px;
+  background-image: linear-gradient(to right top, #06d5f7, #b4ee0e);
+  border-style: none;
+  border-radius: 8px;
+  margin-top: 100px;
+  align-items: center;
+}
+main a {
+  font-size: 18px;
+  padding: 8px;
+  width: 100%;
+  color: #fff;
+}
+main a:link {
+  text-decoration: none;
+}
+
+.ombriere {
+  display: flex;
+  width: 100%;
+  margin-top: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+.ombriere__img {
+  width: 50%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  background-image: url("../images/ombriere.jpg");
+  background-position: center;
+}
+.ombriere__text {
+  width: 45%;
+}
+.ombriere__text p {
+  text-align: left;
+}
+
+#map {
+  height: 600px;
+}
+
+.ajout_map {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.ajout_map input {
+  width: 250px;
+}
+
+#map__submit {
+  width: 100px;
+  height: 30px;
+  background-image: linear-gradient(to right top, #06d5f7, #b4ee0e);
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+footer {
+  margin-top: 100px;
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  main {
+    width: 90%;
+  }
+}
+@media only screen and (max-width: 992px) {
+  main {
+    width: 80%;
+  }
+  .ombriere {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .ombriere__img {
+    width: 100%;
+  }
+  .ombriere__text {
+    width: 100%;
+  }
+  .ombriere__text p {
+    padding-top: 25px;
+    margin-left: 0;
+  }
+}/*# sourceMappingURL=ombrieresolaire.css.map */

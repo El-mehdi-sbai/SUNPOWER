@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* Import du Style.css, Contient les éléments communs à toutes les pages: la nav et le footer et les variables  */
+@import url("./style.css");
+nav li:nth-child(3) {
+  background-color: #94dc1f;
+}
+
+main {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  width: 80%;
+  margin: auto;
+}
+
+h1 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.presentation__societe {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.presentation {
+  display: flex;
+  flex-direction: row;
+}
+.presentation__figure {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.presentation__figure--caption {
+  background-color: #94dc1f;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  font-style: italic;
+}
+.presentation__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  font-size: 20px;
+}
+
+.fondateurs__cartes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.fondateur__carte {
+  width: 219px;
+  height: 350px;
+  background-repeat: no-repeat;
+  margin-bottom: 50px;
+}
+.fondateur__carte:nth-child(1) {
+  background-image: url("../images/Cartefondateur.png");
+}
+.fondateur__carte:nth-child(2) {
+  background-image: url("../images/Cartefondateur2.png");
+}
+.fondateur__carte:nth-child(3) {
+  background-image: url("../images/Cartefondateur3.png");
+}
+.fondateur__overlay {
+  width: 100%;
+  height: 100%;
+  padding: 8px;
+  background: rgba(0, 0, 0, 0.4392156863);
+  color: #fff;
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1400px) {
+  main {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  main {
+    width: 95%;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  main {
+    width: 95%;
+  }
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .presentation__text {
+    width: 80%;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 768px) {
+  main {
+    width: 95%;
+  }
+  .presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .presentation__text {
+    width: 70%;
+  }
+  .fondateurs__cartes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}/*# sourceMappingURL=quisommenous.css.map */
